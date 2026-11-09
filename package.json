@@ -1,0 +1,35 @@
+{
+  "name": "bb-plugin-thread-names",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikushiks/bb-plugin-thread-names.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "bb": ">=0.49",
+    "bbPluginSdk": ">=0.6.79"
+  },
+  "bb": {
+    "name": "Thread Names",
+    "description": "Names threads \"category: two or three words\", all lowercase, from a category list you set, through bb cloud.",
+    "branding": {
+      "icon": "Edit"
+    },
+    "server": "./server.ts"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.6.132",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.3.0",
+    "typescript": "^5.7.0"
+  }
+}
